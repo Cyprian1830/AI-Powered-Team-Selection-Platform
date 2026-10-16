@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Project team builder</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f6f8;--card:#fff;--ink:#16202e;--mut:#5d6b7e;--line:#dde2ea;--acc:#1d4ed8;--acc-ink:#fff;--ok:#0f7b4f;--okbg:#e2f4ec;--warn:#9a5b00;--warnbg:#fdf0d8;--bad:#b3261e;--badbg:#fbe4e2;--chip:#eef2fb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1520;--card:#18202e;--ink:#e8edf5;--mut:#93a1b5;--line:#2a3547;--acc:#6b9bff;--acc-ink:#0b1220;--ok:#5fd3a0;--okbg:#14352a;--warn:#f0b559;--warnbg:#3a2c12;--bad:#ff8f86;--badbg:#3d1c1a;--chip:#1f2b42}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+h1{font-size:26px;margin:0 0 4px;font-weight:600}
+h2{font-size:17px;margin:0 0 14px;font-weight:600}
+h3{font-size:14px;margin:0 0 8px;font-weight:600}
+.sub{color:var(--mut);margin:0 0 22px}
+section.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;margin-bottom:16px}
+label,.lbl{display:block;font-size:13px;font-weight:500;margin-bottom:5px}
+.hint{color:var(--mut);font-weight:400}
+input,select{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:9px 11px}
+input:focus,select:focus,button:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+button{font:inherit;cursor:pointer}
+.primary{background:var(--acc);color:var(--acc-ink);border:0;border-radius:7px;padding:11px 20px;font-weight:600}
+.ghost{background:none;border:1px solid var(--line);color:var(--ink);border-radius:7px;padding:7px 12px}
+.divider{height:1px;background:var(--line);margin:18px 0}
+/* tech picker */
+.picker{position:relative}
+.tag-list{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.tag{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:var(--chip);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.tag .nm{font-weight:600;min-width:90px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.seg button{background:var(--card);color:var(--mut);border:0;padding:4px 10px;font-size:13px}
+.seg button.on{background:var(--acc);color:var(--acc-ink);font-weight:600}
+.step{display:inline-flex;align-items:center;gap:0;border:1px solid var(--line);border-radius:6px;background:var(--card)}
+.step button{border:0;background:none;color:var(--ink);width:30px;height:30px;font-size:17px}
+.step span{min-width:78px;text-align:center;font-size:13px}
+.rm{margin-left:auto;background:none;border:0;color:var(--mut);font-size:20px;line-height:1;padding:2px 6px}
+.rm:hover{color:var(--bad)}
+.menu{position:absolute;left:0;right:0;top:100%;z-index:5;background:var(--card);border:1px solid var(--line);border-radius:8px;margin-top:4px;max-height:240px;overflow:auto;box-shadow:0 8px 24px rgba(0,0,0,.14)}
+.menu button{display:flex;justify-content:space-between;width:100%;text-align:left;background:none;border:0;color:var(--ink);padding:8px 12px}
+.menu button:hover,.menu button.act{background:var(--chip)}
+.menu small{color:var(--mut)}
+.sugg{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;align-items:center;font-size:13px;color:var(--mut)}
+.sugg button{border:1px dashed var(--line);background:none;color:var(--ink);border-radius:20px;padding:2px 10px;font-size:13px}
+.sugg button:hover{border-style:solid}
+/* roles */
+.roles{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.role{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:8px;padding:6px 8px 6px 12px}
+.role.has{border-color:var(--acc);background:var(--chip)}
+/* results */
+.pill{display:inline-block;border-radius:20px;padding:1px 9px;font-size:12.5px;margin:2px 4px 2px 0}
+.ok{background:var(--okbg);color:var(--ok)}.part{background:var(--warnbg);color:var(--warn)}.miss{background:var(--badbg);color:var(--bad)}
+.verdict{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.big{font-size:44px;font-weight:600;line-height:1}
+.big small{font-size:16px;color:var(--mut);font-weight:400}
+.bar{height:6px;background:var(--line);border-radius:4px;overflow:hidden;margin-top:6px;width:120px}
+.bar i{display:block;height:100%;background:var(--acc)}
+.person{border-top:1px solid var(--line);padding:14px 0;display:grid;grid-template-columns:1fr auto;gap:6px 16px}
+.person:first-of-type{border-top:0}
+.person .sc{text-align:right}.person .sc b{font-size:22px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-weight:500;color:var(--mut);font-size:13px;padding:6px 8px;border-bottom:1px solid var(--line)}
+td{padding:8px;border-bottom:1px solid var(--line)}
+.scroll{overflow-x:auto}
+.cols{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.box{border-radius:8px;padding:12px 14px}
+.box ul{margin:4px 0 0;padding-left:18px}
+.box.g{background:var(--okbg)}.box.r{background:var(--badbg)}
+.callout{border-left:4px solid var(--warn);background:var(--warnbg);padding:10px 14px;border-radius:0 8px 8px 0;margin-top:14px}
+.callout.good{border-color:var(--ok);background:var(--okbg)}
+.empty{color:var(--mut)}
+.swap{margin-top:8px;font-size:13px;padding:4px 10px}
+details summary{cursor:pointer;color:var(--acc);font-weight:500;margin-bottom:12px}
+</style>
+</head>
+<body>
+<main>
+<h1>Project team builder</h1>
+<p class="sub">Describe the project and the required skills. We rank employees and recommend the best-fitting team.</p>
+
+<section class="card">
+  <h2>Project</h2>
+  <label for="pname">Project name</label>
+  <input id="pname" value="Payments Data Platform">
+  <div class="grid" style="margin-top:14px">
+    <div><label for="start">Start date</label><input type="date" id="start" value="2026-11-15"></div>
+    <div><label for="end">End date</label><input type="date" id="end" value="2027-03-31"></div>
+    <div><label>Duration</label><div id="dur" style="padding:9px 0"></div></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Required technologies</h2>
+  <div class="picker">
+    <label for="tin">Add a technology <span class="hint">- type to search, Enter to add</span></label>
+    <input id="tin" autocomplete="off" placeholder="e.g. Python, Kafka, Kubernetes">
+    <div class="menu" id="menu" hidden></div>
+  </div>
+  <div class="sugg" id="sugg"></div>
+  <div class="tag-list" id="tags"></div>
+</section>
+
+<section class="card">
+  <h2>Team composition</h2>
+  <div class="roles" id="roles"></div>
+</section>
+
+<section class="card">
+  <h2>Preferences</h2>
+  <div class="grid">
+    <div><label>Min. total experience</label><div class="step" id="minExp"></div></div>
+    <div><label for="minMatch">Min. match score <span class="hint">(0-100)</span></label><input type="number" id="minMatch" value="50" min="0" max="100"></div>
+    <div><label for="sen">Preferred seniority</label><select id="sen"><option>Any</option><option>Junior</option><option>Mid</option><option selected>Senior</option></select></div>
+    <div><label for="dom">Preferred domain</label><input id="dom" value="fintech" list="doms"><datalist id="doms"><option>fintech</option><option>e-commerce</option><option>healthcare</option><option>telecom</option></datalist></div>
+  </div>
+  <div style="margin-top:14px"><label style="font-weight:400"><input type="checkbox" id="avail" checked style="width:auto;margin-right:6px">Only people who are free at the project start date</label></div>
+  <p class="hint" style="margin:10px 0 0;font-size:13px">Match score = skills (up to 80) + seniority (10) + domain (10). Skills count each technology up to its required years; must-haves weigh double.</p>
+  <div id="err" style="margin-top:12px"></div>
+  <div style="margin-top:16px"><button class="primary" id="go">Find the best team</button></div>
+</section>
+
+<div id="out"></div>
+</main>
+
+<script>
+const ALL={Languages:['Python','Java','Kotlin','Go','TypeScript','SQL','Scala'],Data:['Kafka','Spark','Airflow','dbt','Snowflake','PostgreSQL','Elasticsearch'],'Cloud & DevOps':['AWS','Azure','GCP','Docker','Kubernetes','Terraform','Jenkins'],Frontend:['React','Angular','Vue'],'Quality & ML':['Selenium','Cypress','PyTorch','MLflow']};
+const FLAT=Object.entries(ALL).flatMap(([g,l])=>l.map(n=>({n,g})));
+const ROLES=['Backend Developer','Frontend Developer','Data Engineer','DevOps Engineer','QA Engineer','ML Engineer','Tech Lead'];
+const E=[
+['Tomasz Dąbrowski','Data Engineer','Senior',9,['fintech'],{Python:6,Kafka:4,AWS:5,Docker:4,SQL:8,Spark:5}],
+['Robert Nowak','Data Engineer','Senior',10,['fintech','telecom'],{Python:8,AWS:6,Docker:5,Kubernetes:2,SQL:9,Airflow:4}],
+['Anna Wiśniewska','Data Engineer','Mid',5,['e-commerce'],{Python:4,Kafka:3,Docker:2,Airflow:3,SQL:5}],
+['Piotr Zieliński','Data Engineer','Junior',2,['fintech'],{Python:2,SQL:2,Docker:1}],
+['Marta Kowalczyk','Backend Developer','Senior',11,['fintech'],{Java:9,Kotlin:4,Kafka:5,Docker:6,Kubernetes:3,PostgreSQL:8,AWS:4}],
+['Jakub Lewandowski','Backend Developer','Mid',5,['e-commerce'],{Python:4,Docker:3,PostgreSQL:4,AWS:2}],
+['Ewa Mazur','Frontend Developer','Senior',8,['fintech'],{TypeScript:7,React:7,Cypress:3}],
+['Michał Kamiński','Frontend Developer','Mid',4,['telecom'],{TypeScript:3,Angular:4}],
+['Karolina Wójcik','DevOps Engineer','Senior',9,['fintech'],{AWS:7,Docker:8,Kubernetes:6,Terraform:5,Jenkins:6,Python:3}],
+['Paweł Krawczyk','DevOps Engineer','Mid',4,['healthcare'],{Azure:4,Docker:3,Kubernetes:2,Terraform:2}],
+['Natalia Grabowska','QA Engineer','Mid',5,['fintech'],{Selenium:5,Cypress:3,Python:2,SQL:3}],
+['Adam Pawlak','ML Engineer','Senior',8,['fintech','healthcare'],{Python:8,PyTorch:5,MLflow:4,AWS:3,Docker:3,Spark:3}],
+['Ola Michalska','Tech Lead','Senior',13,['fintech'],{Java:10,Python:5,Kafka:6,AWS:7,Kubernetes:4,Docker:7,SQL:9}],
+['Daniel Sikora','Tech Lead','Senior',12,['e-commerce'],{Go:8,Docker:7,Kubernetes:6,GCP:5,Kafka:4}]
+].map(a=>({name:a[0],role:a[1],sen:a[2],exp:a[3],dom:a[4],s:a[5]}));
+
+let techs=[{n:'Python',y:3,must:true},{n:'Kafka',y:2,must:true},{n:'AWS',y:2,must:true},{n:'Docker',y:1,must:false},{n:'Kubernetes',y:1,must:false}];
+let roles={'Data Engineer':2};let minExp=2,hi=-1;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const yl=y=>y?y+(y==1?' yr':' yrs')+'+':'any level';
+
+function drawTags(){
+  $('tags').innerHTML=techs.length?techs.map((t,i)=>`<div class="tag"><span class="nm">${esc(t.n)}</span>
+  <span class="seg"><button data-i="${i}" data-a="must" class="${t.must?'on':''}">Must have</button><button data-i="${i}" data-a="nice" class="${t.must?'':'on'}">Nice to have</button></span>
+  <span class="step"><button data-i="${i}" data-a="dn" aria-label="Less experience">&minus;</button><span>${yl(t.y)}</span><button data-i="${i}" data-a="up" aria-label="More experience">+</button></span>
+  <button class="rm" data-i="${i}" data-a="rm" aria-label="Remove ${esc(t.n)}">&times;</button></div>`).join(''):'<p class="empty">No technologies yet. Add at least one to get a meaningful ranking.</p>';
+  const left=['Python','Java','Kafka','AWS','Docker','Kubernetes','Terraform','SQL','React','Spark'].filter(n=>!techs.some(t=>t.n==n)).slice(0,6);
+  $('sugg').innerHTML=left.length?'Quick add: '+left.map(n=>`<button data-q="${n}">+ ${n}</button>`).join(''):'';
+}
+$('tags').onclick=e=>{const b=e.target.closest('button');if(!b)return;const i=+b.dataset.i,t=techs[i],a=b.dataset.a;
+  if(a=='rm')techs.splice(i,1);else if(a=='must')t.must=true;else if(a=='nice')t.must=false;
+  else if(a=='up')t.y=Math.min(15,t.y+1);else if(a=='dn')t.y=Math.max(0,t.y-1);drawTags()};
+$('sugg').onclick=e=>{const b=e.target.closest('button');if(b)add(b.dataset.q)};
+function add(n){n=n.trim();if(!n)return;const f=FLAT.find(x=>x.n.toLowerCase()==n.toLowerCase());n=f?f.n:n;
+  if(!techs.some(t=>t.n.toLowerCase()==n.toLowerCase()))techs.push({n,y:1,must:true});
+  $('tin').value='';closeMenu();drawTags()}
+function matches(){const q=$('tin').value.trim().toLowerCase();
+  return FLAT.filter(x=>!techs.some(t=>t.n==x.n)&&(!q||x.n.toLowerCase().includes(q))).slice(0,8)}
+function openMenu(){const m=matches(),q=$('tin').value.trim();
+  if(!m.length&&!q){closeMenu();return}
+  $('menu').innerHTML=m.map((x,i)=>`<button data-n="${x.n}" class="${i==hi?'act':''}">${x.n}<small>${x.g}</small></button>`).join('')+
+  (q&&!m.some(x=>x.n.toLowerCase()==q.toLowerCase())?`<button data-n="${esc(q)}">Add "${esc(q)}" as custom<small>custom</small></button>`:'');
+  $('menu').hidden=false}
+function closeMenu(){$('menu').hidden=true;hi=-1}
+$('tin').oninput=()=>{hi=-1;openMenu()};$('tin').onfocus=openMenu;
+$('tin').onkeydown=e=>{const m=matches();
+  if(e.key=='ArrowDown'){hi=Math.min(m.length-1,hi+1);openMenu();e.preventDefault()}
+  else if(e.key=='ArrowUp'){hi=Math.max(0,hi-1);openMenu();e.preventDefault()}
+  else if(e.key=='Enter'){e.preventDefault();add(hi>=0&&m[hi]?m[hi].n:$('tin').value)}
+  else if(e.key=='Escape')closeMenu()};
+$('menu').onmousedown=e=>{const b=e.target.closest('button');if(b){e.preventDefault();add(b.dataset.n)}};
+document.addEventListener('click',e=>{if(!e.target.closest('.picker'))closeMenu()});
+
+function drawRoles(){$('roles').innerHTML=ROLES.map(r=>{const c=roles[r]||0;return `<div class="role ${c?'has':''}"><span>${r}</span><span class="step"><button data-r="${r}" data-d="-1" aria-label="Fewer ${r}">&minus;</button><span style="min-width:28px">${c}</span><button data-r="${r}" data-d="1" aria-label="More ${r}">+</button></span></div>`}).join('')}
+$('roles').onclick=e=>{const b=e.target.closest('button');if(!b)return;const r=b.dataset.r;roles[r]=Math.max(0,Math.min(9,(roles[r]||0)+ +b.dataset.d));drawRoles()};
+function drawExp(){$('minExp').innerHTML=`<button data-d="-1" aria-label="Less">&minus;</button><span>${yl(minExp)}</span><button data-d="1" aria-label="More">+</button>`}
+$('minExp').onclick=e=>{const b=e.target.closest('button');if(b){minExp=Math.max(0,Math.min(20,minExp+ +b.dataset.d));drawExp()}};
+function dur(){const a=new Date($('start').value),b=new Date($('end').value);const m=(b-a)/2629800000;$('dur').textContent=isNaN(m)||m<=0?'Check the dates':'≈ '+Math.round(m*10)/10+' months'}
+$('start').onchange=$('end').onchange=dur;
+
+const AV={'Robert Nowak':'2027-01-15','Marta Kowalczyk':'2026-12-01','Daniel Sikora':'2027-02-01'}; // free from (ISO date); everyone else is free
+const freeFrom=e=>AV[e.name]||'2000-01-01';
+const KEY='team-builder-v2';
+let rank={},sel={},info=null,txt='';
+
+function score(e,d){let tot=0,w=0;const hit=[],gap=[];
+  techs.forEach(t=>{const y=e.s[t.n]||0,need=Math.max(t.y,1),wt=t.must?2:1;w+=wt;tot+=Math.min(y/need,1)*wt;
+    if(y&&y>=t.y)hit.push(`${t.n} ${y} yrs`);else if(y)gap.push(`${t.n}: ${y} of ${t.y} yrs`);else gap.push(`${t.n}: no experience`)});
+  const sk=w?tot/w*80:80,sen=$('sen').value,senOk=sen=='Any'||e.sen==sen,domOk=!d||e.dom.includes(d);
+  return {e,sk:Math.round(sk),senP:senOk?10:0,domP:domOk?10:0,s:Math.round(sk+(senOk?10:0)+(domOk?10:0)),hit,gap,senOk,domOk}}
+
+function validate(){const er=[],a=new Date($('start').value),b=new Date($('end').value),mm=$('minMatch').value;
+  if(isNaN(a)||isNaN(b))er.push('Set both project dates.');else if(b<=a)er.push('The end date must be after the start date.');
+  if(!techs.length)er.push('Add at least one technology.');
+  if(mm===''||+mm<0||+mm>100)er.push('Min. match score must be between 0 and 100.');
+  if(!Object.values(roles).some(c=>c>0))er.push('Pick at least one role in Team composition.');
+  return er}
+
+function save(){try{localStorage.setItem(KEY,JSON.stringify({p:$('pname').value,s:$('start').value,e:$('end').value,techs,roles,minExp,mm:$('minMatch').value,sen:$('sen').value,dom:$('dom').value,av:$('avail').checked}))}catch(_){}}
+function load(){try{const j=JSON.parse(localStorage.getItem(KEY)||'null');if(!j)return;
+  $('pname').value=j.p;$('start').value=j.s;$('end').value=j.e;techs=j.techs;roles=j.roles;minExp=j.minExp;
+  $('minMatch').value=j.mm;$('sen').value=j.sen;$('dom').value=j.dom;$('avail').checked=j.av}catch(_){}}
+
+function compute(){
+  const d=$('dom').value.trim().toLowerCase(),mm=+$('minMatch').value,start=$('start').value,only=$('avail').checked;
+  const pre=E.filter(e=>e.exp>=minExp).map(e=>score(e,d)).filter(r=>r.s>=mm);
+  const pool=only?pre.filter(p=>freeFrom(p.e)<=start):pre;
+  const busy=only?pre.filter(p=>freeFrom(p.e)>start&&roles[p.e.role]>0):[];
+  rank={};sel={};
+  Object.entries(roles).filter(([,c])=>c>0).forEach(([r,c])=>{rank[r]=pool.filter(p=>p.e.role==r).sort((a,b)=>b.s-a.s);sel[r]=rank[r].slice(0,c)});
+  info={passed:pool.length,busy}}
+
+function render(scroll){
+  const lbl={ok:'Covered',part:'Partial',miss:'Missing'},d=$('dom').value.trim().toLowerCase();
+  const team=Object.values(sel).flat(),want=Object.values(roles).reduce((a,c)=>a+c,0);
+  const missing=Object.keys(sel).filter(r=>sel[r].length<roles[r]).map(r=>`${roles[r]-sel[r].length} × ${r}`);
+  const cov=techs.map(t=>{let best=null;team.forEach(p=>{const y=p.e.s[t.n]||0;if(!best||y>best.y)best={y,who:p.e.name}});
+    return {t,best,st:!best||!best.y?'miss':best.y>=t.y?'ok':'part'}});
+  const avg=team.length?Math.round(team.reduce((a,p)=>a+p.s,0)/team.length):0;
+  const covOk=cov.filter(c=>c.st=='ok').length,mustMiss=cov.filter(c=>c.t.must&&c.st!='ok');
+  let h=`<section class="card"><h2>${esc($('pname').value||'Project')}: recommended team</h2>
+  <div class="verdict"><div><div class="big">${avg}<small> / 100</small></div><div class="bar"><i style="width:${avg}%"></i></div></div>
+  <div><b>${team.length} of ${want}</b> requested people found<br><b>${covOk} of ${techs.length}</b> technologies fully covered<br><span class="hint">${E.length} employees screened, ${info.passed} passed the filters</span></div></div>`;
+  h+=missing.length?`<div class="callout">Not enough candidates for: ${missing.join(', ')}. Try lowering the minimum match score or experience${$('avail').checked?', or switch off the availability filter':''}.</div>`:
+    mustMiss.length?`<div class="callout">Must-have gaps: ${mustMiss.map(c=>esc(c.t.n)).join(', ')}. Consider upskilling or an extra hire.</div>`:
+    `<div class="callout good">The team covers every must-have technology.</div>`;
+  if(info.busy.length)h+=`<div class="callout" style="border-color:var(--mut);background:var(--chip)"><b>Excluded as unavailable at project start:</b> ${info.busy.map(p=>`${esc(p.e.name)} (${p.s}/100, free from ${freeFrom(p.e)})`).join(', ')}</div>`;
+  h+=`</section><section class="card"><h2>Nominees</h2>`;
+  h+=team.length?Object.keys(sel).map(r=>sel[r].map((p,i)=>{const alt=rank[r].length-sel[r].length;
+    return `<div class="person"><div><b>${esc(p.e.name)}</b><div class="hint">${p.e.role} &middot; ${p.e.sen} &middot; ${p.e.exp} yrs experience</div>
+  <div style="margin-top:6px">${p.hit.map(x=>`<span class="pill ok">${esc(x)}</span>`).join('')}${p.gap.map(x=>`<span class="pill miss">${esc(x)}</span>`).join('')}</div>
+  <div class="hint" style="font-size:13px;margin-top:4px">Skills ${p.sk}/80 &middot; Seniority ${p.senP}/10 &middot; Domain ${p.domP}/10</div></div>
+  <div class="sc"><b>${p.s}</b><span class="hint"> / 100</span><div class="bar" style="margin-left:auto"><i style="width:${p.s}%"></i></div>
+  ${alt>0?`<button class="ghost swap" data-r="${esc(r)}" data-i="${i}">Swap (${alt} alt.)</button>`:''}</div></div>`}).join('')).join(''):'<p class="empty">No one matched. Loosen the filters and try again.</p>';
+  h+=`</section><section class="card"><h2>Justification</h2><h3>Technology coverage</h3><div class="scroll"><table><tr><th>Technology</th><th>Priority</th><th>Required</th><th>Best on team</th><th>Status</th></tr>`;
+  h+=cov.map(c=>`<tr><td><b>${esc(c.t.n)}</b></td><td>${c.t.must?'Must have':'Nice to have'}</td><td>${yl(c.t.y)}</td><td>${c.best&&c.best.y?`${c.best.y} yrs <span class="hint">(${esc(c.best.who)})</span>`:'-'}</td><td><span class="pill ${c.st}">${lbl[c.st]}</span></td></tr>`).join('');
+  h+=`</table></div><div class="divider"></div><h3>Why each person</h3><div class="cols">`;
+  h+=team.map(p=>{const why=[];if(p.senOk&&$('sen').value!='Any')why.push(`${p.e.sen} seniority as preferred`);if(p.domOk&&d)why.push(`${d} domain experience`);
+    return `<div><b>${esc(p.e.name)}</b> <span class="hint">${p.e.role}</span>
+    <div class="box g" style="margin:8px 0"><b>Strengths</b><ul>${p.hit.concat(why).map(x=>`<li>${esc(x)}</li>`).join('')||'<li>None of the requested skills</li>'}</ul></div>
+    <div class="box r"><b>Gaps</b><ul>${p.gap.map(x=>`<li>${esc(x)}</li>`).join('')||'<li>No gaps</li>'}</ul></div></div>`}).join('');
+  const risks=cov.filter(c=>c.st!='ok').map(c=>`${c.t.n} is ${c.st=='miss'?'not covered':'only partly covered ('+c.best.y+' of '+c.t.y+' yrs)'}${c.t.must?' and marked must have':''}.`);
+  const rl=(risks.length?risks:['No technology risks found.']).concat(['This is a recommendation only. The final decision stays with the manager.']);
+  h+=`</div><div class="divider"></div><h3>Risks and next steps</h3><ul style="margin:0;padding-left:18px">${rl.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
+  <div style="margin-top:16px"><button class="ghost" id="copy">Copy summary</button></div></section>`;
+  txt=`${$('pname').value||'Project'} - recommended team (score ${avg}/100)\n`+team.map(p=>`- ${p.e.name}, ${p.e.role}, ${p.s}/100 | strengths: ${p.hit.join(', ')||'none'} | gaps: ${p.gap.join(', ')||'none'}`).join('\n')+
+    `\n\nTechnology coverage:\n`+cov.map(c=>`- ${c.t.n} (${c.t.must?'must':'nice'}, ${yl(c.t.y)}): ${lbl[c.st]}${c.best&&c.best.y?', best '+c.best.y+' yrs ('+c.best.who+')':''}`).join('\n')+`\n\nRisks:\n`+rl.map(x=>'- '+x).join('\n');
+  $('out').innerHTML=h;if(scroll)$('out').scrollIntoView({behavior:'smooth'})}
+
+$('out').onclick=e=>{const b=e.target.closest('button');if(!b)return;
+  if(b.classList.contains('swap')){const r=b.dataset.r,i=+b.dataset.i,cur=sel[r][i],others=rank[r].filter(p=>!sel[r].includes(p));
+    if(!others.length)return;sel[r][i]=others.find(p=>rank[r].indexOf(p)>rank[r].indexOf(cur))||others[0];render(false)}
+  else if(b.id=='copy'){(navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(()=>{b.textContent='Copied'},()=>{b.textContent='Copy failed'})}};
+
+function run(){const er=validate();
+  $('err').innerHTML=er.length?`<div class="callout" style="border-color:var(--bad);background:var(--badbg)"><ul style="margin:0;padding-left:18px">${er.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:'';
+  if(er.length)return;save();compute();render(true)}
+$('go').onclick=run;
+load();drawTags();drawRoles();drawExp();dur();
+</script>
+</body>
+</html>

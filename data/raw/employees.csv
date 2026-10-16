@@ -1,0 +1,84 @@
+employee_id,full_name,email,role,seniority,location,timezone,total_experience_years,hire_date
+E0001,Piotr Nowak,e0001@corp.example,DevOps Engineer,Junior,Warsaw,UTC+1,1.1,2025-12-08
+E0002,Piotr Wójcik,e0002@corp.example,Data Engineer,Mid,Gdańsk,UTC+1,3.4,17/08/2024
+E0003,Michał Woźniak,e0003@corp.example,Data Engineer,Junior,London,UTC+0,1.8,2025-07-21
+E0004,Kamil Zielińska,e0004@corp.example,back-end developer,Mid,Lisbon,UTC+0,3.9,17/05/2024
+E0005,Zofia Wiśniewska,e0005@corp.example,data engineer,Mid,Kraków,UTC+1,2.7,2025-01-17
+E0006,Tomasz Dąbrowski,e0006@corp.example,Data Engineer,Sr,Lisbon,UTC+0,9.3,2021-05-28
+E0007,Ewa Kowalski,e0007@corp.example,frontend dev,senior,Wrocław,UTC+1,11.4,2020-04-17
+E0008,Zofia Dąbrowski,e0008@corp.example,sdet,Jr,Lisbon,UTC+0,2.4,2025-03-09
+E0009,Kamil Nowak,e0009@corp.example,backend dev,Sr,Berlin,UTC+1,11.9,2020-01-03
+E0010,Natalia Jankowski,e0010@corp.example,DevOps Engineer,lead,Berlin,UTC+1,12.5,2019-09-09
+E0011,Paweł Kozłowska,e0011@corp.example,ML Engineer,senior,London,UTC+0,8.8,2021-09-16
+E0012,Katarzyna Lewandowski,e0012@corp.example,back-end developer,Jr,Berlin,UTC+1,2.2,14/04/2025
+E0013,Paweł Kamińska,e0013@corp.example,Data Engineer,Lead,Kraków,UTC+1,12.2,2019-11-01
+E0014,Michał Wiśniewska,e0014@corp.example,ml engineer,mid,Bangalore,UTC+5,3.0,2024-11-16
+E0015,Anna Nowak,e0015@corp.example,Data Engineer,mid,Berlin,UTC+1,4.1,11/04/2024
+E0016,Ala Dąbrowski,e0016@corp.example,Backend Developer,Mid,London,UTC+0,4.1,10/04/2024
+E0017,Jan Zielińska,e0017@corp.example,frontend developer,Mid,London,UTC+0,3.1,2024-10-24
+E0018,Ala Kozłowska,e0018@corp.example,Backend Developer,Senior,Kraków,UTC+1,9.0,2021-07-24
+E0019,Robert Wiśniewska,e0019@corp.example,QA Engineer,Jr,London,UTC+0,2.0,2025-05-24
+E0020,Robert Woźniak,e0020@corp.example,back-end developer,Mid,Bangalore,UTC+5,2.7,2025-01-19
+E0021,Ola Dąbrowski,e0021@corp.example,Backend Developer,Lead,Wrocław,UTC+1,12.9,2019-06-12
+E0022,Ola Wójcik,e0022@corp.example,ml engineer,senior,Gdańsk,UTC+1,9.8,2021-02-17
+E0023,Ida Woźniak,e0023@corp.example,fe developer,Junior,Lisbon,UTC+0,2.2,2025-04-18
+E0024,Piotr Nowak,e0024@corp.example,Frontend Developer,Senior,Lisbon,UTC+0,10.5,2020-09-30
+E0025,Zofia Wiśniewska,e0025@corp.example,Tech Lead,Junior,Berlin,UTC+1,2.3,2025-03-24
+E0026,Kamil Dąbrowski,e0026@corp.example,Backend Developer,Sr,Kraków,UTC+1,9.9,2021-02-05
+E0027,Robert Kowalski,e0027@corp.example,Backend Developer,Sr,Gdańsk,UTC+1,9.3,2021-06-03
+E0028,Anna Wójcik,e0028@corp.example,Data Engineer,Junior,Lisbon,UTC+0,0.9,2026-01-12
+E0029,Adam Lewandowski,e0029@corp.example,Frontend Developer,mid,London,UTC+0,4.1,2024-04-01
+E0030,Tomasz Kowalski,e0030@corp.example,DevOps Engineer,senior,Kraków,UTC+1,8.3,24/12/2021
+E0031,Michał Wójcik,e0031@corp.example,Frontend Developer,Jr,Lisbon,UTC+0,1.7,2025-08-01
+E0032,Ala Zielińska,e0032@corp.example,platform engineer,Jr,Lisbon,UTC+0,1.1,2025-11-27
+E0033,Bartek Zielińska,e0033@corp.example,etl developer,Senior,Wrocław,UTC+1,8.8,2021-09-16
+E0034,Bartek Kowalski,e0034@corp.example,Data Engineer,Mid,Bangalore,UTC+5,6.0,31/03/2023
+E0035,Ala Kozłowska,e0035@corp.example,ML Engineer,junior,Lisbon,UTC+0,2.2,2025-04-16
+E0036,Robert Kozłowska,e0036@corp.example,Backend Developer,senior,Wrocław,UTC+1,8.1,27/01/2022
+E0037,Bartek Kowalski,e0037@corp.example,data engineer,senior,Gdańsk,UTC+1,7.9,2022-03-17
+E0038,Adam Zielińska,e0038@corp.example,machine learning engineer,Senior,Kraków,UTC+1,6.0,2023-03-21
+E0039,Anna Lewandowski,e0039@corp.example,team lead,Senior,Lisbon,UTC+0,10.8,2020-08-11
+E0040,Zofia Wiśniewska,e0040@corp.example,Backend Developer,Senior,Kraków,UTC+1,11.8,17/01/2020
+E0041,Anna Lewandowski,e0041@corp.example,technical lead,Sr,London,UTC+0,8.9,2021-08-20
+E0042,Ala Nowak,e0042@corp.example,Frontend Developer,Senior,Lisbon,UTC+0,6.0,2023-03-22
+E0043,Paweł Wójcik,e0043@corp.example,backend engineer,Junior,Lisbon,UTC+0,1.6,2025-08-12
+E0044,Marek Kamińska,e0044@corp.example,Backend Developer,Jr,Warsaw,UTC+1,1.6,14/08/2025
+E0045,Jan Kozłowska,e0045@corp.example,QA Engineer,Senior,Gdańsk,UTC+1,7.0,2022-09-10
+E0046,Michał Kozłowska,e0046@corp.example,devops,lead,Gdańsk,UTC+1,10.3,18/11/2020
+E0047,Kamil Wiśniewska,e0047@corp.example,team lead,Lead,Gdańsk,UTC+1,10.0,2021-01-07
+E0048,Ewa Lewandowski,e0048@corp.example,Data Engineer,Sr,Berlin,UTC+1,9.0,2021-08-04
+E0049,Robert Nowak,e0049@corp.example,etl developer,Senior,Lisbon,UTC+0,10.4,2020-11-03
+E0050,Bartek Dąbrowski,e0050@corp.example,QA Engineer,mid,Kraków,UTC+1,5.8,24/04/2023
+E0051,Natalia Wójcik,e0051@corp.example,Frontend Developer,Sr,Gdańsk,UTC+1,6.3,2023-01-19
+E0052,Anna Kowalski,e0052@corp.example,Backend Developer,Mid,Bangalore,UTC+5,3.7,2024-07-04
+E0053,Julia Zielińska,e0053@corp.example,platform engineer,Jr,Warsaw,UTC+1,2.4,2025-03-22
+E0054,Ola Kozłowska,e0054@corp.example,tester,Lead,Lisbon,UTC+0,15.7,2017-12-01
+E0055,Ola Szymański,e0055@corp.example,Tech Lead,Mid,Kraków,UTC+1,5.4,2023-07-30
+E0056,Ala Kowalski,e0056@corp.example,etl developer,mid,Lisbon,UTC+0,4.4,2024-02-17
+E0057,Michał Dąbrowski,e0057@corp.example,DevOps Engineer,mid,Berlin,UTC+1,2.6,2025-02-11
+E0058,Adam Dąbrowski,e0058@corp.example,Backend Developer,junior,Kraków,UTC+1,2.4,2025-03-11
+E0059,Adam Kozłowska,e0059@corp.example,Data Engineer,Mid,Kraków,UTC+1,4.5,2024-01-26
+E0060,Paweł Szymański,e0060@corp.example,Frontend Developer,junior,Kraków,UTC+1,2.1,2025-05-06
+E0061,Tomasz Wójcik,e0061@corp.example,platform engineer,junior,Lisbon,UTC+0,0.7,24/02/2026
+E0062,Michał Jankowski,e0062@corp.example,QA Engineer,junior,Bangalore,UTC+5,1.3,2025-10-28
+E0063,Ida Dąbrowski,e0063@corp.example,Backend Developer,Jr,Lisbon,UTC+0,0.7,2026-02-14
+E0064,Kamil Dąbrowski,e0064@corp.example,Frontend Developer,Senior,Kraków,UTC+1,8.7,2021-09-28
+E0065,Julia Nowak,e0065@corp.example,Frontend Developer,senior,Kraków,UTC+1,11.2,2020-05-15
+E0066,Anna Kamińska,e0066@corp.example,DevOps Engineer,Senior,London,UTC+0,8.2,10/01/2022
+E0067,Natalia Woźniak,e0067@corp.example,backend engineer,Mid,Warsaw,UTC+1,2.8,2024-12-14
+E0068,Ola Wójcik,e0068@corp.example,be developer,Senior,Lisbon,UTC+0,7.9,2022-03-07
+E0069,Piotr Jankowski,e0069@corp.example,Backend Developer,Mid,Berlin,UTC+1,5.2,30/08/2023
+E0070,Piotr Kozłowska,e0070@corp.example,devops,junior,Gdańsk,UTC+1,2.3,2025-04-10
+E0071,Marta Kamińska,e0071@corp.example,Backend Developer,Sr,Berlin,UTC+1,8.9,2021-08-21
+E0072,Tomasz Kowalski,e0072@corp.example,sre,mid,Berlin,UTC+1,5.6,2023-06-19
+E0073,Katarzyna Jankowski,e0073@corp.example,Frontend Developer,junior,Bangalore,UTC+5,2.0,2025-05-29
+E0074,Katarzyna Wójcik,e0074@corp.example,frontend developer,Junior,Lisbon,UTC+0,1.4,01/10/2025
+E0075,Jan Jankowski,e0075@corp.example,Data Engineer,Sr,Bangalore,UTC+5,7.1,2022-08-14
+E0076,Marek Nowak,e0076@corp.example,DevOps Engineer,Senior,Berlin,UTC+1,11.1,2020-06-17
+E0077,Zofia Kowalski,e0077@corp.example,DevOps Engineer,Junior,Warsaw,UTC+1,1.5,2025-09-13
+E0078,Natalia Nowak,e0078@corp.example,Backend Developer,Junior,Berlin,UTC+1,2.5,2025-02-23
+E0079,Tomasz Jankowski,e0079@corp.example,front-end developer,lead,Berlin,UTC+1,10.5,2020-10-04
+E0080,Kamil Wójcik,e0080@corp.example,tester,senior,Kraków,UTC+1,7.1,2022-08-25
+E0004,Kamil Zielińska,e0004@corp.example,back-end developer,Mid,Lisbon,UTC+0,3.9,17/05/2024
+E0099,Bad Row,,,Mid,Kraków,UTC+1,5,2020-01-01
+E0098,Neg Exp,,QA,Mid,Kraków,UTC+1,-3,not-a-date

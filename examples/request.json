@@ -1,0 +1,4 @@
+{"project_name":"Payments Data Platform","required_technologies":[{"name":"python","min_years":3},{"name":"kafka","min_years":2},{"name":"aws","min_years":2},{"name":"docker"},{"name":"kubernetes","min_years":1}],
+"required_roles":[{"role":"Backend Developer","count":2},{"role":"Data Engineer","count":1},{"role":"DevOps Engineer","count":1}],
+"team_size":5,"start_date":"2026-11-15","end_date":"2027-03-31","min_allocation_pct":50,"min_total_experience_years":3,
+"preferred_seniority":["senior"],"preferred_domains":["fintech"],"reference_utc_offset":1,"max_timezone_diff_hours":1}

@@ -1,0 +1,8 @@
+{"entity": "employees", "reason": "duplicate employee_id", "payload": {"employee_id": "E0004", "full_name": "Kamil Zielińska", "email": "e0004@corp.example", "role": "back-end developer", "seniority": "Mid", "location": "Lisbon", "timezone": "UTC+0", "total_experience_years": "3.9", "hire_date": "17/05/2024"}}
+{"entity": "employees", "reason": "unknown/missing role: ''", "payload": {"employee_id": "E0099", "full_name": "Bad Row", "email": "", "role": "", "seniority": "Mid", "location": "Kraków", "timezone": "UTC+1", "total_experience_years": "5", "hire_date": "2020-01-01"}}
+{"entity": "employees", "reason": "invalid experience: '-3'", "payload": {"employee_id": "E0098", "full_name": "Neg Exp", "email": "", "role": "QA", "seniority": "Mid", "location": "Kraków", "timezone": "UTC+1", "total_experience_years": "-3", "hire_date": "not-a-date"}}
+{"entity": "skills", "reason": "invalid years: '-2'", "payload": {"employee_id": "E0007", "technology": "python", "years": "-2", "proficiency": "3"}}
+{"entity": "skills", "reason": "unknown technology: 'COBOL-ish'", "payload": {"employee_id": "E0009", "technology": "COBOL-ish", "years": "3", "proficiency": "2"}}
+{"entity": "skills", "reason": "orphan: employee not in valid employees", "payload": {"employee_id": "E9999", "technology": "python", "years": "4", "proficiency": "4"}}
+{"entity": "availability", "reason": "invalid availability window", "payload": {"employee_id": "E0010", "available_from": "2026-01-01", "available_to": "2025-01-01", "allocation_pct": "100"}}
+{"entity": "availability", "reason": "allocation out of range: '250'", "payload": {"employee_id": "E0011", "available_from": "2026-11-01", "available_to": "2027-06-01", "allocation_pct": "250"}}

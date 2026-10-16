@@ -1,0 +1,207 @@
+employee_id,project_name,domain,role,technologies,start_date,end_date
+E0001,Project-396,fintech,DevOps Engineer,AMAZON WEB SERVICES;PYTHON 3;DOCKER,2023-09-07,2025-01-04
+E0002,Project-710,logistics,Data Engineer,google cloud platform;DBT CORE;PYTHON,2021-12-03,2022-09-14
+E0003,Project-223,healthcare,Data Engineer,  airflow ;  t-sql ;kafka,2020-06-08,2021-04-25
+E0003,Project-132,e-commerce,Data Engineer,Tsql;  gcp ;  airflow ,2023-09-03,2024-01-05
+E0003,Project-516,healthcare,Data Engineer,Tsql;Containers;postgresql,2020-12-07,2022-04-24
+E0003,Project-296,healthcare,Data Engineer,google cloud;Amazon Web Services;spark,2025-01-05,10/08/2025
+E0004,Project-785,energy,back-end developer,pg;Fast Api;django,2023-04-25,2023-11-05
+E0004,Project-650,healthcare,back-end developer,amazon web services;DJANGO;springboot,2025-02-12,2025-06-19
+E0004,Project-926,energy,back-end developer,amazon web services;PY;node.js,2022-11-05,2023-12-13
+E0005,Project-854,e-commerce,data engineer,postgres;apache airflow;dbt core,2025-12-17,16/06/2026
+E0005,Project-940,healthcare,data engineer,APACHE AIRFLOW;python3;CONTAINERS,2022-04-26,2022-12-28
+E0005,Project-128,fintech,data engineer,dbt;Apache Spark;CONTAINERS,2020-03-23,07/12/2020
+E0005,Project-690,healthcare,data engineer,  dbt ;python3.11;Psql,2024-12-10,2025-09-23
+E0006,Project-868,fintech,Data Engineer,pg;airflow;pyspark,06/03/2026,2026-10-14
+E0006,Project-424,logistics,Data Engineer,containers;Google Cloud Platform;PG,2019-12-21,18/01/2021
+E0007,Project-366,logistics,frontend dev,REACTJS;TS;ANGULARJS,14/03/2024,2024-07-07
+E0007,Project-458,healthcare,frontend dev,cypress;js;docker,2020-03-10,2020-07-04
+E0007,Project-816,e-commerce,frontend dev,docker;reactjs;TYPESCRIPT,2023-10-18,10/09/2024
+E0007,Project-832,healthcare,frontend dev,JAVASCRIPT;  node.js ;TYPESCRIPT,2022-01-11,2022-10-31
+E0008,Project-668,healthcare,sdet,jenkins;PYTHON;T-Sql,2021-09-06,2022-08-12
+E0008,Project-666,telecom,sdet,PYTEST;Cpython;JAVA17,2022-02-06,2023-01-04
+E0009,Project-354,fintech,backend dev,  aws ;Apache Kafka;ANSI SQL,14/04/2025,14/10/2026
+E0009,Project-735,fintech,backend dev,T-SQL;java;fastapi,2022-10-25,2023-11-10
+E0009,Project-805,telecom,backend dev,DOCKER;Django;python,28/08/2021,2022-07-14
+E0010,Project-518,e-commerce,DevOps Engineer,CICD;Google Cloud;Containers,19/12/2020,2021-09-13
+E0011,Project-822,e-commerce,ML Engineer,ansi sql;  google cloud ;Mlops,2022-12-19,2023-12-04
+E0011,Project-171,e-commerce,ML Engineer,tsql;SKLEARN;  apache spark ,15/09/2024,2026-03-01
+E0011,Project-651,logistics,ML Engineer,Containers;sklearn;apache spark,2024-07-28,2025-06-11
+E0011,Project-425,energy,ML Engineer,google cloud;containers;  mlops ,19/08/2021,2021-12-09
+E0012,Project-724,logistics,back-end developer,  ansi sql ;kotlin;FAST API,2024-04-10,2024-08-18
+E0012,Project-394,energy,back-end developer,AMAZON WEB SERVICES;SPRING;JDK,2021-01-08,2022-07-13
+E0013,Project-944,logistics,Data Engineer,dbt core;kafka;  ansi sql ,2023-05-11,2024-11-18
+E0013,Project-649,fintech,Data Engineer,AMAZON WEB SERVICES;kafka;dbt core,2026-01-30,12/09/2026
+E0014,Project-883,telecom,ml engineer,MLOPS;  spark ;PYTORCH,20/06/2025,2026-10-14
+E0014,Project-356,healthcare,ml engineer,pytorch;containers;PYTHON3.11,2024-10-12,2025-10-13
+E0015,Project-537,e-commerce,Data Engineer,dbt core;kafka;Spark,2025-03-04,2025-11-09
+E0015,Project-161,telecom,Data Engineer,google cloud platform;CONTAINERS;apache kafka,12/10/2024,2025-10-21
+E0015,Project-691,telecom,Data Engineer,airflow;  pyspark ;amazon web services,2022-04-18,2022-09-08
+E0015,Project-674,telecom,Data Engineer,containers;GCP;CPYTHON,05/06/2021,2022-11-09
+E0016,Project-713,fintech,Backend Developer,py;FAST API;django,2021-10-22,2023-06-08
+E0016,Project-489,telecom,Backend Developer,node;fast api;amazon web services,2024-04-08,2024-09-11
+E0017,Project-362,healthcare,frontend developer,typescript;Node Js;  containers ,2025-01-31,14/07/2025
+E0017,Project-742,e-commerce,frontend developer,Ts;ANGULAR 2+;  ecmascript ,2022-08-13,2024-01-27
+E0018,Project-696,energy,Backend Developer,Spring;  postgres ;DJANGO,2022-07-02,2022-11-10
+E0018,Project-230,energy,Backend Developer,Node.Js;kt;AMAZON WEB SERVICES,2022-07-22,2023-12-10
+E0019,Project-388,logistics,QA Engineer,java 17;T-SQL;Python,22/01/2021,2022-05-20
+E0019,Project-966,telecom,QA Engineer,sql;Selenium;Pytest,2025-02-01,01/05/2026
+E0019,Project-457,fintech,QA Engineer,PYTHON3.11;Selenium;SQL,2021-03-07,2022-08-31
+E0019,Project-831,energy,QA Engineer,PYTEST;cypress;Gitlab Ci,2025-02-16,2026-07-20
+E0020,Project-238,fintech,back-end developer,node;docker;PYTHON,12/03/2024,2025-07-30
+E0020,Project-359,fintech,back-end developer,kt;FAST API;DJANGO,2020-02-24,2021-01-21
+E0020,Project-495,e-commerce,back-end developer,  springboot ;containers;kt,2021-04-22,22/10/2022
+E0020,Project-400,e-commerce,back-end developer,JAVA17;  node js ;pg,2024-03-19,2025-03-23
+E0021,Project-507,e-commerce,Backend Developer,kotlin;Django;  fast api ,2020-04-20,2021-01-22
+E0021,Project-726,e-commerce,Backend Developer,node.js;Docker;Fastapi,27/03/2021,12/10/2021
+E0022,Project-390,fintech,ml engineer,APACHE SPARK;PYTORCH;  docker ,2020-06-02,2021-12-02
+E0022,Project-774,telecom,ml engineer,docker;sql;  apache spark ,2024-07-05,2024-12-29
+E0022,Project-754,fintech,ml engineer,GOOGLE CLOUD;containers;Apache Spark,2021-07-26,2022-09-05
+E0023,Project-151,e-commerce,fe developer,  angularjs ;node.js;containers,13/04/2022,2022-08-05
+E0023,Project-146,logistics,fe developer,JS;node;  cypress ,2021-09-19,2022-06-23
+E0024,Project-744,energy,Frontend Developer,nodejs;angular 2+;typescript,2024-04-29,2025-04-22
+E0024,Project-308,logistics,Frontend Developer,node.js;  docker ;Angularjs,2021-08-10,2022-10-27
+E0024,Project-645,e-commerce,Frontend Developer,node js;REACT;cypress,18/04/2024,09/03/2025
+E0024,Project-312,energy,Frontend Developer,CYPRESS;ANGULAR 2+;reactjs,2022-12-31,2024-03-25
+E0025,Project-607,healthcare,Tech Lead,  apache kafka ;JAVA;Springboot,14/10/2021,2023-02-19
+E0026,Project-468,energy,Backend Developer,FAST API;Py;java17,2023-04-22,19/06/2024
+E0027,Project-360,fintech,Backend Developer,node.js;FAST API;  sql ,29/12/2025,14/10/2026
+E0027,Project-583,fintech,Backend Developer,Django;Apache Kafka;Springboot,2025-06-19,2026-10-14
+E0027,Project-769,e-commerce,Backend Developer,  jdk ;spring boot;aws,11/03/2020,2020-08-16
+E0028,Project-813,logistics,Data Engineer,pg;Apache Spark;dbt,2020-05-10,2021-01-18
+E0028,Project-159,telecom,Data Engineer,pg;containers;pyspark,17/01/2021,29/07/2022
+E0028,Project-841,healthcare,Data Engineer,  cpython ;dbt;  postgres ,2025-03-15,2026-03-14
+E0028,Project-990,e-commerce,Data Engineer,dbt;Cpython;  airflow ,2020-11-11,2021-05-26
+E0029,Project-914,e-commerce,Frontend Developer,ts;  docker ;node.js,08/05/2024,2025-08-16
+E0029,Project-240,energy,Frontend Developer,typescript;ES6;  docker ,2026-03-02,14/10/2026
+E0029,Project-599,fintech,Frontend Developer,es6;  node.js ;  cypress ,26/10/2020,2021-12-27
+E0029,Project-283,fintech,Frontend Developer,js;NODE;Ts,2021-05-30,14/10/2022
+E0030,Project-493,energy,DevOps Engineer,  terraform ;CPYTHON;ci/cd,2020-03-05,19/11/2020
+E0030,Project-887,telecom,DevOps Engineer,PYTHON;Google Cloud;TERRAFORM,2022-06-02,2023-07-06
+E0030,Project-699,energy,DevOps Engineer,python3;docker;ms azure,2024-02-27,2025-05-10
+E0030,Project-498,e-commerce,DevOps Engineer,CI/CD;CONTAINERS;python3,2024-07-05,2025-10-16
+E0031,Project-717,energy,Frontend Developer,Typescript;ANGULARJS;React.Js,14/11/2022,2023-07-26
+E0031,Project-387,logistics,Frontend Developer,  react ;  js ;Node.Js,02/08/2022,2023-05-11
+E0032,Project-125,logistics,platform engineer,kubernetes;TERRAFORM;AMAZON WEB SERVICES,2022-05-16,2024-01-06
+E0032,Project-587,fintech,platform engineer,GOOGLE CLOUD;CI/CD;python,2020-10-27,2021-07-22
+E0033,Project-460,logistics,etl developer,docker;pyspark;DBT,2024-12-16,2025-09-10
+E0033,Project-497,logistics,etl developer,containers;  pyspark ;  postgres ,2024-08-26,2025-08-12
+E0033,Project-962,logistics,etl developer,Docker;py;  apache kafka ,2024-02-21,2024-10-29
+E0033,Project-827,logistics,etl developer,aws;pyspark;tsql,2020-09-21,2021-07-20
+E0034,Project-387,telecom,Data Engineer,GOOGLE CLOUD PLATFORM;  pyspark ;  apache kafka ,22/04/2022,2023-04-19
+E0035,Project-798,fintech,ML Engineer,python 3;gcp;Containers,2022-05-21,19/11/2023
+E0035,Project-805,healthcare,ML Engineer,SPARK;torch;sklearn,2023-12-21,2025-08-11
+E0035,Project-771,fintech,ML Engineer,torch;  py ;  gcp ,2023-08-12,2024-06-16
+E0035,Project-223,logistics,ML Engineer,Scikit-Learn;mlops;PYTHON,2022-05-21,2023-10-11
+E0036,Project-967,energy,Backend Developer,Django;fast api;Aws,2025-12-09,2026-10-14
+E0036,Project-112,e-commerce,Backend Developer,PG;spring;apache kafka,2025-06-11,2026-06-06
+E0036,Project-140,fintech,Backend Developer,Apache Kafka;amazon web services;DJANGO,2023-04-20,2023-11-06
+E0037,Project-926,logistics,data engineer,  dbt core ;google cloud platform;Ansi Sql,2025-11-28,2026-08-16
+E0038,Project-998,logistics,machine learning engineer,pyspark;ansi sql;sklearn,2021-09-28,2022-01-31
+E0039,Project-971,e-commerce,team lead,SPRINGBOOT;CONTAINERS;react,20/12/2022,2023-07-31
+E0039,Project-208,healthcare,team lead,reactjs;amazon web services;K8S,2025-01-06,24/06/2025
+E0040,Project-841,logistics,Backend Developer,containers;python3;KAFKA,2021-05-19,11/10/2022
+E0040,Project-734,telecom,Backend Developer,Fast Api;kt;DJANGO,2025-11-07,2026-10-14
+E0041,Project-292,logistics,technical lead,kafka;python;aws,2024-08-23,2025-09-05
+E0041,Project-233,e-commerce,technical lead,kubernetes;  spring boot ;react.js,2023-12-24,09/05/2025
+E0041,Project-174,e-commerce,technical lead,SPRINGBOOT;apache kafka;Java 17,2022-02-23,27/09/2023
+E0042,Project-175,fintech,Frontend Developer,reactjs;JAVASCRIPT;Docker,2024-05-31,2025-04-17
+E0042,Project-708,telecom,Frontend Developer,angularjs;cypress;javascript,2025-03-12,30/11/2025
+E0043,Project-331,e-commerce,backend engineer,sql;CPYTHON;Spring,09/01/2021,2021-08-21
+E0043,Project-960,logistics,backend engineer,  amazon web services ;Kafka;node,2020-01-12,12/05/2020
+E0043,Project-684,telecom,backend engineer,t-sql;kt;nodejs,06/11/2025,2026-10-14
+E0043,Project-799,logistics,backend engineer,FAST API;kotlin;  springboot ,2021-06-28,2021-11-05
+E0044,Project-526,telecom,Backend Developer,kt;Jdk;fast api,2023-03-21,2024-06-26
+E0044,Project-618,logistics,Backend Developer,spring boot;aws;sql,2022-10-01,2023-12-28
+E0044,Project-303,e-commerce,Backend Developer,pg;docker;Amazon Web Services,2022-03-13,2023-06-06
+E0045,Project-383,energy,QA Engineer,pytest;  t-sql ;cicd,20/06/2022,06/02/2024
+E0046,Project-220,logistics,devops,Docker;  py ;Ci/Cd,2021-01-14,2022-06-23
+E0046,Project-305,e-commerce,devops,PY;azure;AMAZON WEB SERVICES,2024-07-19,2024-12-26
+E0046,Project-562,e-commerce,devops,Aws;python;Kube,2025-08-03,2025-11-03
+E0047,Project-218,logistics,team lead,REACT.JS;amazon web services;java 17,2025-09-12,2026-10-14
+E0048,Project-575,fintech,Data Engineer,TSQL;APACHE SPARK;python 3,2022-12-02,2023-07-15
+E0048,Project-972,healthcare,Data Engineer,  pyspark ;apache kafka;GOOGLE CLOUD,2025-09-22,2025-12-25
+E0048,Project-955,logistics,Data Engineer,aws;postgresql;Spark,13/02/2021,2021-09-30
+E0048,Project-725,logistics,Data Engineer,Apache Kafka;Python;pyspark,2021-04-29,2021-10-28
+E0049,Project-610,logistics,etl developer,kafka;Ansi Sql;  aws ,2025-04-02,12/09/2026
+E0049,Project-620,telecom,etl developer,apache airflow;Aws;  apache kafka ,2022-10-28,2024-04-25
+E0049,Project-563,fintech,etl developer,TSQL;  apache airflow ;PYTHON3.11,2022-03-01,2023-05-31
+E0049,Project-243,energy,etl developer,postgres;Sql;Dbt,25/05/2024,2025-05-02
+E0050,Project-963,energy,QA Engineer,java 17;  pytest ;TSQL,29/06/2020,2021-02-27
+E0050,Project-655,energy,QA Engineer,  ci-cd ;  pytest ;  selenium ,2024-03-30,12/03/2025
+E0050,Project-209,fintech,QA Engineer,cpython;CYPRESS;SELENIUM,2026-02-04,2026-10-14
+E0050,Project-903,e-commerce,QA Engineer,Cypress;  java ;  selenium ,2025-07-17,2026-10-03
+E0051,Project-430,telecom,Frontend Developer,Ecmascript;cypress;  node ,2024-07-07,2026-01-23
+E0052,Project-198,healthcare,Backend Developer,aws;Nodejs;python,2020-06-23,2020-11-02
+E0052,Project-936,fintech,Backend Developer,Node.Js;kt;spring boot,2021-05-11,2022-07-06
+E0052,Project-688,healthcare,Backend Developer,Django;APACHE KAFKA;Kotlin,2019-12-25,2020-04-29
+E0053,Project-859,energy,platform engineer,  gitlab ci ;kubernetes;aws,2023-11-19,2025-03-06
+E0053,Project-787,telecom,platform engineer,  containers ;PYTHON;AZURE,2024-12-14,2025-06-14
+E0053,Project-438,e-commerce,platform engineer,terraform;  ci-cd ;python,2020-10-10,2022-05-10
+E0054,Project-613,telecom,tester,selenium;python3.11;Pytest,2024-09-26,2025-08-19
+E0054,Project-849,logistics,tester,pytest;SELENIUM;cypress,2024-08-07,2025-11-16
+E0054,Project-580,logistics,tester,  selenium ;TSQL;Pytest,2022-03-10,2022-12-23
+E0055,Project-559,telecom,Tech Lead,react;  springboot ;  aws ,11/04/2025,2025-10-28
+E0055,Project-271,energy,Tech Lead,docker;Amazon Web Services;kafka,2020-07-05,2021-02-15
+E0055,Project-529,healthcare,Tech Lead,  python3.11 ;  react ;aws,2020-08-01,2021-10-15
+E0056,Project-672,telecom,etl developer,Amazon Web Services;dbt;google cloud platform,2024-03-26,2024-12-30
+E0056,Project-319,telecom,etl developer,Postgres;kafka;Py,04/06/2024,2024-10-23
+E0056,Project-327,e-commerce,etl developer,  ansi sql ;  cpython ;  psql ,2025-07-09,2026-02-18
+E0056,Project-606,logistics,etl developer,py;  airflow ;dbt,2024-04-10,2025-06-01
+E0057,Project-571,telecom,DevOps Engineer,containers;amazon web services;google cloud platform,03/02/2021,2022-04-17
+E0057,Project-648,fintech,DevOps Engineer,Azure;KUBE;  terraform ,12/04/2022,2023-04-01
+E0057,Project-687,e-commerce,DevOps Engineer,Terraform;gitlab ci;py,10/04/2022,2022-10-28
+E0058,Project-610,logistics,Backend Developer,Fast Api;Apache Kafka;  postgres ,2022-02-19,2022-08-22
+E0058,Project-202,energy,Backend Developer,Django;fastapi;Aws,04/09/2023,2025-01-22
+E0058,Project-969,energy,Backend Developer,AMAZON WEB SERVICES;  node ;Postgresql,2020-08-20,2021-01-25
+E0059,Project-288,fintech,Data Engineer,apache spark;airflow;dbt core,2021-08-06,28/01/2022
+E0059,Project-155,fintech,Data Engineer,POSTGRESQL;google cloud platform;Sql,2020-12-06,2021-12-11
+E0059,Project-741,healthcare,Data Engineer,spark;GOOGLE CLOUD PLATFORM;Containers,2023-01-20,02/12/2023
+E0059,Project-555,healthcare,Data Engineer,  google cloud platform ;  pyspark ;AMAZON WEB SERVICES,2023-03-09,2024-03-13
+E0060,Project-213,energy,Frontend Developer,  angularjs ;node js;containers,2024-09-15,11/05/2025
+E0060,Project-204,e-commerce,Frontend Developer,react.js;typescript;angular,2025-12-28,2026-07-01
+E0061,Project-845,fintech,platform engineer,KUBE;TERRAFORM;aws,17/06/2024,2025-08-03
+E0061,Project-115,healthcare,platform engineer,ms azure;gcp;  containers ,2021-05-15,2022-01-26
+E0061,Project-611,fintech,platform engineer,ci/cd;python3;  google cloud platform ,2023-06-14,2023-12-01
+E0062,Project-735,healthcare,QA Engineer,pytest;Github Actions;  selenium ,2022-02-26,2023-06-28
+E0063,Project-731,e-commerce,Backend Developer,amazon web services;  py ;java,2025-08-02,2026-10-14
+E0063,Project-638,energy,Backend Developer,fast api;Tsql;Spring,11/02/2024,2024-08-17
+E0063,Project-511,telecom,Backend Developer,PG;  kt ;SPRINGBOOT,2024-03-20,2025-03-26
+E0064,Project-322,energy,Frontend Developer,es6;  cypress ;  react ,2021-10-03,2022-10-19
+E0065,Project-544,energy,Frontend Developer,Typescript;  containers ;  angular ,2021-10-08,2022-09-19
+E0066,Project-161,e-commerce,DevOps Engineer,amazon web services;python 3;Ci/Cd,2023-05-17,2023-11-10
+E0067,Project-502,energy,backend engineer,  spring ;Java 17;  kafka ,2022-05-29,29/11/2023
+E0067,Project-655,healthcare,backend engineer,fastapi;  kt ;Spring Boot,19/07/2022,03/06/2023
+E0068,Project-496,logistics,be developer,docker;Spring Boot;KOTLIN,05/03/2024,2025-08-13
+E0068,Project-309,fintech,be developer,SPRINGBOOT;containers;Ansi Sql,2023-12-19,2025-04-09
+E0068,Project-420,logistics,be developer,  sql ;Node.Js;kt,21/12/2021,2023-03-24
+E0069,Project-992,energy,Backend Developer,spring boot;NODE JS;Kt,2022-06-25,2023-07-09
+E0069,Project-307,fintech,Backend Developer,Ansi Sql;  django ;  python ,06/10/2024,2026-05-10
+E0070,Project-406,e-commerce,devops,  jenkins ;AWS;containers,2025-03-12,08/07/2026
+E0071,Project-682,telecom,Backend Developer,PYTHON3;Spring;fast api,2021-10-18,2023-01-21
+E0071,Project-985,telecom,Backend Developer,  postgresql ;  containers ;  apache kafka ,2021-01-27,2022-07-27
+E0071,Project-914,e-commerce,Backend Developer,JAVA;  springboot ;  django ,2022-07-09,2023-11-20
+E0072,Project-104,e-commerce,sre,DOCKER;jenkins;  azure ,2020-05-19,2020-10-15
+E0072,Project-876,e-commerce,sre,AWS;  tf ;K8S,2025-12-26,2026-10-14
+E0072,Project-217,fintech,sre,  k8s ;GOOGLE CLOUD;AZURE,2024-06-21,2025-02-06
+E0072,Project-446,telecom,sre,Gcp;docker;k8s,2022-09-30,2023-11-07
+E0073,Project-515,energy,Frontend Developer,DOCKER;Es6;React.Js,2020-07-17,2020-12-06
+E0073,Project-593,logistics,Frontend Developer,Es6;REACT.JS;typescript,2024-06-15,2026-01-24
+E0074,Project-191,telecom,frontend developer,es6;node;  cypress ,18/05/2022,2024-01-05
+E0074,Project-467,fintech,frontend developer,Docker;  react.js ;ES6,2019-12-17,2021-05-10
+E0074,Project-316,energy,frontend developer,  typescript ;ANGULARJS;containers,2021-05-11,15/05/2022
+E0074,Project-111,fintech,frontend developer,Cypress;js;Typescript,30/10/2024,06/04/2025
+E0075,Project-811,telecom,Data Engineer,  dbt core ;  docker ;PYTHON,11/05/2024,2024-08-27
+E0075,Project-184,healthcare,Data Engineer,google cloud;TSQL;dbt core,2023-01-09,2023-12-13
+E0075,Project-557,e-commerce,Data Engineer,pyspark;DBT;airflow,2024-07-17,17/09/2025
+E0076,Project-788,telecom,DevOps Engineer,AWS;azure;terraform,2023-07-12,2024-10-19
+E0076,Project-324,energy,DevOps Engineer,azure;terraform;kube,28/03/2021,2021-12-22
+E0076,Project-976,telecom,DevOps Engineer,terraform;AWS;Ci-Cd,2024-11-22,2025-04-05
+E0076,Project-383,logistics,DevOps Engineer,CI/CD;Terraform;K8S,25/02/2021,2022-09-10
+E0077,Project-884,e-commerce,DevOps Engineer,Aws;kube;Ms Azure,31/01/2021,2022-05-25
+E0078,Project-274,telecom,Backend Developer,  jdk ;nodejs;Kotlin,2021-02-14,23/03/2022
+E0079,Project-528,fintech,front-end developer,  node.js ;  typescript ;  cypress ,2022-11-11,2023-08-06
+E0080,Project-482,healthcare,tester,CPYTHON;ci-cd;cypress,2024-03-29,2025-01-11
+E0080,Project-213,logistics,tester,python3;  tsql ;  cypress ,03/02/2023,2023-07-12
+E0080,Project-335,fintech,tester,  py ;Jdk;tsql,2020-01-15,2021-06-25
+E0080,Project-435,logistics,tester,  java 17 ;Cypress;sql,22/06/2023,2024-01-24

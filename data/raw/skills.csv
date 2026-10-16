@@ -1,0 +1,436 @@
+employee_id,technology,years,proficiency
+E0001,containers,0.9,2
+E0001,MS AZURE,0.5,2
+E0001,k8s,0.4,1
+E0001,PYTHON3,0.8,1
+E0001,  amazon web services ,0.4,4
+E0001,  gcp ,0.5,5
+E0001,  ci-cd ,0.4,1
+E0002,Dbt,1.5,4
+E0002,T-SQL,0.7,5
+E0002,  apache airflow ,1.6,5
+E0002,CONTAINERS,1.0,2
+E0002,apache kafka,2.7,1
+E0002,spark,2.8,4
+E0003,python,1.6,1
+E0003,Sql,1.5,5
+E0003,kafka,1.3,5
+E0003,POSTGRES,1.1,5
+E0003,pyspark,1.6,2
+E0003,GOOGLE CLOUD PLATFORM,0.9,3
+E0004,KOTLIN,0.5,5
+E0004,  containers ,3.6,5
+E0004,spring boot,3.8,1
+E0004,fastapi,2.4,2
+E0004,django,3.7,5
+E0004,  java 17 ,2.4,5
+E0004,Python,2.7,5
+E0005,google cloud platform,2.3,5
+E0005,python3.11,1.3,1
+E0005,TSQL,2.4,1
+E0005,containers,1.9,1
+E0005,  apache kafka ,2.4,4
+E0005,aws,2.4,2
+E0006,Python 3,4.3,2
+E0006,dbt core,6.2,3
+E0006,  google cloud platform ,3.3,2
+E0006,tsql,7.6,2
+E0006,airflow,2.5,4
+E0006,Aws,4.0,5
+E0006,Spark,4.8,2
+E0007,Angular 2+,4.9,3
+E0007,Containers,8.6,4
+E0007,Js,2.4,4
+E0007,ts,4.1,4
+E0007,Cypress,9.2,5
+E0007,react.js,9.1,5
+E0007,node.js,6.5,2
+E0008,PYTHON,2.2,2
+E0008,  jenkins ,1.6,4
+E0008,java17,1.3,3
+E0008,Pytest,0.8,3
+E0008,CYPRESS,2.2,3
+E0008,  selenium ,2.3,1
+E0009,Cpython,1.3,1
+E0009,Node,4.9,3
+E0009,aws,2.7,4
+E0009,django,4.2,1
+E0009,spring,1.8,5
+E0010,GOOGLE CLOUD,6.2,1
+E0010,aws,9.6,5
+E0010,DOCKER,5.9,2
+E0010,  ms azure ,6.6,3
+E0010,  cicd ,4.5,4
+E0011,Pyspark,1.3,5
+E0011,gcp,2.9,1
+E0011,torch,2.2,1
+E0011,sklearn,5.8,2
+E0012,postgresql,1.5,3
+E0012,kotlin,1.1,1
+E0012,Docker,0.6,3
+E0012,aws,0.9,1
+E0012,PYTHON3,1.0,2
+E0012,  django ,1.1,2
+E0013,airflow,9.1,1
+E0013,Containers,0.6,3
+E0013,dbt,9.1,3
+E0013,apache kafka,2.2,5
+E0013,  psql ,5.2,3
+E0014,  ansi sql ,1.4,3
+E0014,SPARK,0.9,4
+E0014,DOCKER,0.6,3
+E0014,torch,1.4,2
+E0014,Mlops,0.5,2
+E0014,  scikit learn ,2.9,1
+E0014,python3,3.0,5
+E0015,t-sql,0.8,5
+E0015,Amazon Web Services,4.1,5
+E0015,Google Cloud,2.2,4
+E0015,python,3.5,5
+E0015,Postgres,2.0,2
+E0015,PYSPARK,3.4,4
+E0016,Springboot,2.8,4
+E0016,Ansi Sql,1.3,5
+E0016,PYTHON,1.9,3
+E0016,  jdk ,2.8,1
+E0017,ANGULAR,2.5,1
+E0017,react.js,1.8,2
+E0017,CYPRESS,2.3,2
+E0018,amazon web services,4.7,2
+E0018,spring boot,6.5,4
+E0018,  python3.11 ,5.6,3
+E0018,CONTAINERS,3.7,3
+E0018,JAVA,0.9,1
+E0018,APACHE KAFKA,2.5,5
+E0019,cypress,1.0,2
+E0019,  jenkins ,0.8,4
+E0019,  java 17 ,0.7,4
+E0019,T-SQL,1.5,5
+E0020,  fastapi ,1.3,1
+E0020,SPRING,0.5,5
+E0020,Django,2.4,1
+E0020,APACHE KAFKA,0.9,1
+E0020,python3,1.1,1
+E0020,tsql,0.4,5
+E0020,kt,2.3,4
+E0021,SPRING,3.8,5
+E0021,  java ,1.8,4
+E0021,FAST API,4.6,1
+E0022,Containers,5.3,4
+E0022,mlops,9.6,1
+E0022,Pyspark,6.8,3
+E0022,  pytorch ,6.4,2
+E0022,Py,5.1,1
+E0022,  sql ,1.8,2
+E0022,GCP,9.2,2
+E0023,JAVASCRIPT,2.1,5
+E0023,reactjs,2.2,2
+E0023,  angularjs ,1.7,2
+E0023,Typescript,2.2,4
+E0023,CONTAINERS,1.3,1
+E0023,  cypress ,1.2,2
+E0024,Nodejs,9.9,3
+E0024,ANGULAR 2+,5.2,5
+E0024,  ts ,3.2,1
+E0024,CONTAINERS,6.8,4
+E0024,cypress,6.1,3
+E0024,  react.js ,5.9,1
+E0025,aws,1.1,4
+E0025,python,0.3,5
+E0025,Java 17,1.6,4
+E0025,apache kafka,1.8,3
+E0025,SPRINGBOOT,1.6,1
+E0025,  kube ,0.8,1
+E0025,Docker,2.1,2
+E0026,tsql,4.1,1
+E0026,kotlin,4.9,2
+E0026,KAFKA,4.0,4
+E0026,NODE,3.2,5
+E0027,java 17,3.3,5
+E0027,ansi sql,6.4,5
+E0027,node js,8.4,4
+E0027,Python,1.5,4
+E0027,  fast api ,0.8,4
+E0028,python 3,0.6,1
+E0028,  aws ,0.9,2
+E0028,  containers ,0.6,3
+E0028,T-SQL,0.8,5
+E0028,Kafka,0.5,1
+E0028,  google cloud platform ,0.8,2
+E0028,  apache airflow ,0.6,3
+E0029,CYPRESS,0.9,3
+E0029,Typescript,2.5,2
+E0029,  es6 ,2.8,3
+E0029,Reactjs,4.0,4
+E0030,  kube ,4.1,1
+E0030,AZURE,7.5,5
+E0030,docker,7.7,3
+E0030,gcp,5.0,4
+E0030,PYTHON,1.6,2
+E0031,typescript,0.5,3
+E0031,CONTAINERS,1.0,1
+E0031,REACTJS,1.6,4
+E0031,Nodejs,0.4,3
+E0031,Cypress,0.8,5
+E0031,ANGULARJS,0.9,4
+E0032,DOCKER,0.4,5
+E0032,  python ,1.1,4
+E0032,Tf,0.4,1
+E0032,ms azure,0.7,5
+E0032,  google cloud platform ,0.9,2
+E0032,AMAZON WEB SERVICES,0.6,5
+E0033,aws,2.7,1
+E0033,  postgresql ,1.9,3
+E0033,Gcp,1.3,4
+E0033,PYTHON3.11,5.4,5
+E0034,dbt core,2.8,1
+E0034,py,4.9,5
+E0034,  amazon web services ,3.9,2
+E0034,apache spark,4.7,2
+E0035,GOOGLE CLOUD PLATFORM,1.6,3
+E0035,Python 3,0.9,1
+E0035,Docker,1.5,3
+E0035,  sql ,1.1,4
+E0035,Mlops,0.8,3
+E0035,  sklearn ,1.4,5
+E0036,JDK,7.8,3
+E0036,spring boot,2.5,1
+E0036,  nodejs ,5.0,5
+E0037,dbt,5.6,2
+E0037,PYSPARK,4.3,3
+E0037,T-SQL,1.3,3
+E0038,T-Sql,5.5,3
+E0038,torch,3.6,1
+E0038,scikit learn,1.3,5
+E0039,apache kafka,9.7,2
+E0039,java17,0.7,2
+E0039,Python3.11,7.1,3
+E0039,reactjs,5.9,5
+E0039,Docker,1.0,5
+E0039,Aws,6.7,2
+E0040,aws,0.4,2
+E0040,nodejs,8.3,3
+E0040,  fastapi ,6.0,1
+E0040,java,2.2,4
+E0040,docker,9.1,3
+E0040,python,9.4,1
+E0041,java 17,1.2,2
+E0041,  springboot ,7.3,1
+E0041,  aws ,7.6,4
+E0041,apache kafka,1.8,5
+E0041,K8S,8.2,1
+E0042,typescript,2.3,3
+E0042,cypress,5.0,3
+E0042,node js,1.8,2
+E0042,JAVASCRIPT,1.8,1
+E0042,docker,2.5,4
+E0042,Angular,3.1,4
+E0042,  reactjs ,2.4,4
+E0043,KOTLIN,1.4,4
+E0043,DJANGO,0.4,5
+E0043,jdk,0.8,4
+E0043,containers,0.9,3
+E0044,Django,0.5,5
+E0044,apache kafka,0.8,3
+E0044,docker,1.3,3
+E0044,tsql,0.8,3
+E0044,PYTHON3,1.4,1
+E0044,java 17,0.7,4
+E0045,java,2.0,3
+E0045,Selenium,6.3,3
+E0045,JENKINS,1.8,3
+E0045,  cpython ,5.8,4
+E0045,sql,3.7,3
+E0045,PYTEST,4.9,4
+E0046,ms azure,4.9,3
+E0046,  cpython ,7.7,2
+E0046,KUBE,6.6,2
+E0046,google cloud,7.5,3
+E0046,JENKINS,3.9,5
+E0047,Apache Kafka,8.9,2
+E0047,Python3,3.8,2
+E0047,Java 17,0.5,2
+E0047,docker,7.4,5
+E0047,kube,1.5,1
+E0047,SPRINGBOOT,7.8,5
+E0047,  aws ,9.9,1
+E0048,Cpython,3.2,1
+E0048,gcp,8.2,5
+E0048,amazon web services,8.5,5
+E0048,sql,8.2,2
+E0049,gcp,7.6,3
+E0049,AWS,9.7,1
+E0049,  docker ,6.5,4
+E0049,postgres,4.8,5
+E0050,Ci/Cd,3.9,5
+E0050,  java17 ,5.2,4
+E0050,CYPRESS,2.5,3
+E0050,Tsql,4.8,2
+E0051,DOCKER,3.0,1
+E0051,nodejs,4.7,1
+E0051,cypress,2.9,5
+E0051,ts,1.3,3
+E0051,REACT,3.1,2
+E0052,KOTLIN,1.6,1
+E0052,ANSI SQL,2.1,3
+E0052,  node.js ,3.1,3
+E0052,Fast Api,0.4,2
+E0053,amazon web services,0.9,3
+E0053,  kubernetes ,2.1,2
+E0053,ci/cd,0.3,5
+E0053,  google cloud ,1.4,1
+E0054,  py ,1.1,3
+E0054,  t-sql ,2.2,1
+E0054,pytest,8.5,1
+E0054,  jdk ,2.4,1
+E0054,  cypress ,9.0,5
+E0054,selenium,3.8,2
+E0055,Kafka,4.4,1
+E0055,Python 3,2.7,5
+E0055,Spring Boot,0.4,1
+E0055,  docker ,3.3,2
+E0055,  react.js ,0.5,5
+E0055,aws,1.1,2
+E0055,  jdk ,5.2,1
+E0056,apache airflow,0.3,1
+E0056,  sql ,0.3,2
+E0056,Dbt Core,1.8,2
+E0056,  amazon web services ,1.3,5
+E0056,  pg ,1.8,3
+E0056,containers,2.0,5
+E0057,AWS,0.7,5
+E0057,  azure ,0.5,3
+E0057,k8s,2.1,3
+E0057,  google cloud platform ,0.9,4
+E0057,  python 3 ,1.4,2
+E0058,django,1.4,4
+E0058,  containers ,0.4,3
+E0058,springboot,1.3,1
+E0058,AMAZON WEB SERVICES,1.8,1
+E0058,Nodejs,1.5,3
+E0058,  fast api ,2.1,2
+E0058,java17,0.9,5
+E0059,Google Cloud Platform,4.0,4
+E0059,APACHE SPARK,2.2,2
+E0059,DBT,2.1,5
+E0059,containers,0.6,3
+E0059,POSTGRES,1.6,3
+E0059,  amazon web services ,3.0,3
+E0059,APACHE AIRFLOW,3.4,5
+E0060,Docker,1.9,4
+E0060,reactjs,0.6,4
+E0060,node js,0.8,4
+E0060,  typescript ,1.7,5
+E0060,ECMASCRIPT,1.5,5
+E0060,Angularjs,0.6,1
+E0061,Kubernetes,0.6,4
+E0061,py,0.4,1
+E0061,github actions,0.5,3
+E0062,  java17 ,1.2,5
+E0062,pytest,0.8,4
+E0062,CI-CD,0.8,4
+E0062,  python ,0.7,2
+E0063,postgresql,0.7,2
+E0063,fast api,0.5,1
+E0063,  tsql ,0.6,4
+E0064,JAVASCRIPT,8.0,5
+E0064,  react.js ,8.1,2
+E0064,typescript,4.2,2
+E0064,NODEJS,3.4,5
+E0064,angular,2.5,3
+E0065,nodejs,0.8,4
+E0065,  containers ,5.9,1
+E0065,Typescript,3.1,4
+E0065,react,3.6,4
+E0065,angular 2+,5.6,3
+E0066,GOOGLE CLOUD PLATFORM,1.5,1
+E0066,azure,2.2,5
+E0066,KUBERNETES,0.4,1
+E0066,Amazon Web Services,4.0,3
+E0066,  docker ,2.0,5
+E0066,PYTHON3.11,4.6,5
+E0066,terraform,3.3,5
+E0067,amazon web services,0.3,3
+E0067,DJANGO,0.9,5
+E0067,psql,1.9,4
+E0067,  docker ,2.7,2
+E0068,  t-sql ,2.1,1
+E0068,node,5.5,4
+E0068,  django ,6.7,4
+E0069,Kotlin,2.3,4
+E0069,docker,2.5,2
+E0069,jdk,1.5,2
+E0069,aws,0.9,4
+E0069,tsql,2.9,4
+E0069,Nodejs,3.0,1
+E0070,azure,1.1,2
+E0070,TERRAFORM,1.5,5
+E0070,Docker,1.8,3
+E0071,POSTGRES,8.7,1
+E0071,spring boot,4.3,1
+E0071,  t-sql ,8.9,4
+E0071,DOCKER,3.3,2
+E0071,aws,6.2,3
+E0071,FASTAPI,2.9,5
+E0071,java17,1.3,3
+E0072,  k8s ,1.1,3
+E0072,  amazon web services ,1.9,3
+E0072,azure,4.6,5
+E0072,docker,4.1,4
+E0073,cypress,1.8,5
+E0073,CONTAINERS,1.0,3
+E0073,Angularjs,1.1,1
+E0073,node js,0.9,4
+E0073,JS,1.6,5
+E0074,  containers ,0.6,5
+E0074,ts,0.5,3
+E0074,  cypress ,1.2,3
+E0075,  docker ,3.6,1
+E0075,  kafka ,7.0,3
+E0075,  python 3 ,0.8,5
+E0075,aws,3.5,1
+E0075,  dbt core ,0.7,3
+E0075,Airflow,3.4,4
+E0075,APACHE SPARK,3.2,3
+E0076,Ms Azure,2.8,5
+E0076,amazon web services,3.1,4
+E0076,JENKINS,9.6,1
+E0076,  gcp ,6.5,4
+E0076,KUBE,3.5,3
+E0076,PYTHON,6.6,4
+E0077,Azure,0.6,3
+E0077,  python 3 ,0.3,4
+E0077,Amazon Web Services,0.8,1
+E0077,docker,0.8,4
+E0077,  ci/cd ,0.9,3
+E0077,GOOGLE CLOUD,0.8,1
+E0077,  tf ,1.3,3
+E0078,  node js ,0.6,5
+E0078,py,0.4,2
+E0078,apache kafka,1.3,5
+E0078,java,1.8,2
+E0078,fastapi,1.7,3
+E0079,typescript,8.8,1
+E0079,node.js,2.0,1
+E0079,Ecmascript,7.0,4
+E0079,docker,1.7,3
+E0079,Cypress,2.6,2
+E0079,angular 2+,6.1,4
+E0080,t-sql,3.6,1
+E0080,python,5.2,5
+E0080,Selenium,1.6,3
+E0080,java 17,2.5,1
+E0080,Pytest,6.2,4
+E0080,cicd,3.5,4
+E0080,Cypress,1.3,5
+E0044,Django,0.5,5
+E0047,SPRINGBOOT,7.8,5
+E0022,GCP,9.2,2
+E0007,ts,4.1,4
+E0054,selenium,3.8,2
+E0074,  cypress ,1.2,3
+E0001,  ci-cd ,0.4,1
+E0067,  docker ,2.7,2
+E0007,python,-2,3
+E0009,COBOL-ish,3,2
+E9999,python,4,4
